@@ -5,32 +5,38 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css' }}">
 	<title>saining.li</title>
   </head>
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <h1 id="project_title">Hi it's me Saining</h1>
-          <h2 id="project_tagline">And this is my website</h2>
-
-        </header>
+    <div class="wrapper">
+        <div id="background-img">
+            <a href="/" id="title">saining.li</a>
+        </div>
+	</div>
+    <div id="nav">
+		<ul>
+			<li>
+			<a href="/">home</a>
+			</li>
+			<li>
+			<a href="/">cv</a>
+			</li>
+			<li>
+			<a href="/">bread</a>
+			</li>
+			<li>
+			<a href="/">paint</a>
+			</li>
+		</ul>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+    <div id="content" class="wrapper">
+      <section id="main_content">
         {{ content }}
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-      </footer>
     </div>
   </body>
 </html>

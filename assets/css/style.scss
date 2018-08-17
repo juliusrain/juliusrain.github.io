@@ -1,0 +1,65 @@
+---
+---
+$font-serif: 'Libre Baskerville', serif;
+$font-sans-serif: 'Raleway', sans-serif;
+
+body {
+    font-family: $font-serif;
+    background-color: #f2e2da;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:16px;
+}
+
+#background-img {
+    background-image: url('../../img/background.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height:400px;
+    max-height: 427px;
+    min-height: 200px;
+    width: 100%;
+}
+
+#title {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: $font-sans-serif;
+    font-size: 65px;
+    margin: 10px 0 0 20px;
+    position: absolute;
+}
+
+#content {
+    margin: 15px 0;
+}
+
+#nav{
+    text-align: right;
+    padding: 10px 0 0 0;
+    ul {
+        list-style: none;
+        font-size: 30px; 
+        margin: 0;
+        
+        li {
+            display: inline-block;
+            a {
+                color: #000000;
+                text-decoration: none;
+                font-family: $font-sans-serif;
+            }
+        }
+        
+        li + li:before {
+            content: "/"; 
+            padding: 0 3px;
+        }
+    }
+}
+
+.wrapper {
+    padding: 15px;
+    background-color: #ffffff;
+} 
