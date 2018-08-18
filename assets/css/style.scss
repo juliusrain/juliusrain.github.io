@@ -5,21 +5,18 @@ $font-sans-serif: 'Raleway', sans-serif;
 
 body {
     font-family: $font-serif;
-    background-color: #f2e2da;
+    background-color: #f1e5d9;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     font-size:16px;
+    min-width:300px;
 }
 
 #background-img {
     background-image: url('../../img/background.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: cover;
     height:400px;
-    max-height: 427px;
-    min-height: 200px;
-    width: 100%;
 }
 
 #title {
@@ -42,6 +39,7 @@ body {
         list-style: none;
         font-size: 30px; 
         margin: 0;
+        padding: 0;
         
         li {
             display: inline-block;
@@ -63,3 +61,23 @@ body {
     padding: 15px;
     background-color: #ffffff;
 } 
+
+@media (max-width: 750px) {
+    #background-img {
+        height:200px;
+    }
+    #title {
+        font-size: 40px;
+    }
+
+    #nav ul{
+        text-align: center;
+        font-size: 20px;
+        
+        
+        li + li:before {
+            content: "."; 
+            padding: 0 3px;
+        }
+    }
+}
