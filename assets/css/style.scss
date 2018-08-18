@@ -11,6 +11,7 @@ body {
     margin-right: auto;
     font-size:16px;
     min-width:300px;
+    margin-top:0;
 }
 
 #background-img {
@@ -80,4 +81,8 @@ body {
             padding: 0 3px;
         }
     }
+    
+    .wrapper {
+        padding: 5px;
+    } 
 }
