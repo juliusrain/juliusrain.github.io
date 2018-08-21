@@ -2,11 +2,12 @@
 ---
 $font-serif: 'Libre Baskerville', serif;
 $font-sans-serif: 'Raleway', sans-serif;
+$site-width: 1000px;
 
 body {
     font-family: $font-serif;
     background-color: #f1e5d9;
-    max-width: 1000px;
+    max-width: $site-width;
     margin-left: auto;
     margin-right: auto;
     font-size:16px;
@@ -74,6 +75,17 @@ a {
     background-color: #ffffff;
 } 
 
+.post-img {
+    width:100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+}
+
 @media (max-width: 750px) {
     #background-img {
         height:200px;
@@ -96,4 +108,15 @@ a {
     .wrapper {
         padding: 5px;
     } 
+
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .grid-container {
+        grid-template-columns: auto;
+    }
 }
