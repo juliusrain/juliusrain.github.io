@@ -1,11 +1,11 @@
 ---
 ---
 $font-serif: 'Libre Baskerville', serif;
-$font-sans-serif: 'Raleway', sans-serif;
+$font-sans-serif: 'Open Sans', sans-serif;
 $site-width: 1000px;
 
 body {
-    font-family: $font-serif;
+    font-family: $font-sans-serif;
     background-color: #f1e5d9;
     max-width: $site-width;
     margin-left: auto;
@@ -29,7 +29,7 @@ a {
 #title {
     text-decoration: none;
     color: #ffffff;
-    font-family: $font-sans-serif;
+    font-family: $font-serif;
     font-size: 65px;
     margin: 10px 0 0 20px;
     position: absolute;
@@ -118,5 +118,35 @@ a {
 
     .grid-container {
         grid-template-columns: 1fr;
+    }
+}
+
+#resume  {
+    .row{
+      display: flex;
+      padding: 5px 0;
+    .col {
+      flex-basis: 30%;
+      padding: 0px 10px;
+      }
+      .col:last-child{
+      flex-grow: 3;
+      }
+    }
+    
+    h1, h2, h3 {
+      text-transform: uppercase;
+      font-family: $font-serif;
+    }
+    
+    h1, h2 {
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1.1em;
+        border-bottom: 1px solid black;
     }
 }
